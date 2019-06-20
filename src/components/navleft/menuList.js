@@ -1,0 +1,81 @@
+const  Menus=[{
+  title:'首页',
+  path:'/admin/home',
+  key:'首页',
+  id:"1"
+},
+{
+  title:'柱状图',
+  path:'/admin/bar',
+  id:"2",
+  children:[
+    {
+      title:'柱状图1',
+      path:'/admin/bar/bar1',
+      id:"2-1"
+    },
+    {
+      title:'柱状图2',
+      path:'/admin/bar/bar2',
+      id:"2-2"
+    }
+  ]
+},
+{
+  title:'饼图',
+  path:'/admin/pie',
+  id:"3",
+  children:[
+    {
+      title:'饼图1',
+      path:'/admin/pie/pie1',
+      id:"3-1",
+    },
+    {
+      title:'饼图2',
+      path:'/admin/pie/pie2',
+      id:"3-2",
+    }
+  ]
+},
+{
+  title:'折线图',
+  path:'/admin/line',
+  id:"4",
+  children:[
+    {
+      title:'折线图',
+      path:'/admin/line/line1',
+      id:"4-1"
+    },
+    {
+      title:'折线图2',
+      path:'/admin/line/line2',
+      id:"4-2"
+    }
+  ]
+},
+{
+  title:'商品管理',
+  path:'/admin/goods',
+  id:"5",
+  children:[
+    {
+      title:'商品列表',
+      path:'/admin/goods/list',
+      id:"5-1"
+    }, 
+    {
+      title:'不知道填什么',
+      path:'/admin/goods/dontKnow',
+      id:"5-2"
+    }
+  ]
+},
+{
+  title:'用户管理',
+  path:'/admin/user',
+  id:"6"
+}
+]
+export default Menus;
